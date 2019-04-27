@@ -1,2 +1,2 @@
 # C
-Univarsicty C Program
+University C Program

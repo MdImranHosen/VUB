@@ -75,3 +75,22 @@ void main()
           return m;
         }
     }
+////////////////////// IF condition /////////////
+#include<stdio.h>
+void main()
+{
+    int number;
+    printf("Enter an inttger: ");
+    scanf("%d",&number);
+
+    if(number % 2 == 0)
+    {
+      printf("%d is even Number", number);
+    }
+    else
+    {
+     printf("%d is old Number.", number);
+    }
+    return 0;
+}
+

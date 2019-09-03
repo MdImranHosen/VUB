@@ -1,3 +1,85 @@
+/* Start Memory address in an array prent elements */
+#include<stdio.h>
+void firstfunction(int imran[]);
+void firstdetails(int imran[]);
+void main(){
+   int imran[12];
+
+   for(int i = 0; i<12; i++){
+    imran[i] = i;
+   }
+   firstfunction(imran);
+   firstdetails(imran);
+}
+
+void firstfunction(int imran[]){
+   for(int i=0; i<12; i++){
+    printf("Value in the array %d \n", imran[i]);
+   }
+
+}
+
+void firstdetails(int imran[]){
+   for(int i=0; i<12; i++){
+    printf("Value in the array %d and address is %d \n", imran[i],&imran[i]);
+   }
+}
+
+/* end Start Memory address in an array prent elements */
+
+#include<stdio.h>
+void printaray(int x[]);
+
+void main(){
+  int x[15];
+
+  for(int i = 0; i<15; i++){
+    x[i] = i;
+  }
+  printaray(x);
+}
+void printaray(int x[]){
+ for(int i=0; i<15; i++){
+    printf("value in the array %d \n", x[i]);
+ }
+
+  for(int i=0; i<15; i++){
+    printf("value in the array %d and address is %d \n", x[i],&x[i]);
+  }
+}
+
+/* second way memory address array print */
+#include<stdio.h>
+void mfunction(int imran[]);
+void main(){
+     int imran[10];
+
+     for(int i=0; i<10; i++){
+        imran[i] = i;
+     }
+     mfunction(imran);
+}
+void mfunction(int imran[]){
+  for(int i=0; i<10; i++){
+    printf("Value in the %d and Address %d \n", imran[i],&imran[i]);
+  }
+}
+
+/* Third way memory address array print */
+#include<stdio.h>
+int main(){
+  //1
+  int myArray[9] = {1,2,3,4,5,6,7,8,9};
+  int i;
+  //2
+  for(i=0;i<9;i++){
+    //3
+    printf("Address for %d is %d\n",myArray[i],&myArray[i]);
+  }
+}
+
+/* End memory address */
+
 /* Sorted list in ascending order */
 #include<stdio.h>
 int main()

@@ -1,4 +1,42 @@
-/* Start Memory address in an array prent elements */
+
+// Md Imran Hosen
+// Web Developer
+// www.github.com/MdImranHosen
+// www.fb.com/Md.ImranHosen.up
+//::::::::::::::::::::::::: Number of Element a array sorting ascending orders... :::::::::::::::::::::::::::::///////////////
+#include<stdio.h>
+int main(){
+  int array[100],c,n,d,swap;
+  printf("Enter Number of Element \n");
+  scanf("%d",&n);
+  printf("Enter %d Integers \n", n);
+
+  for(c=0; c<n; c++)
+    scanf("%d", &array[c]);
+
+  for(c=0; c<n-1; c++){
+    for(d=0; d<n-c-1; d++){
+
+    printf("\n array[%d]=%d array[%d]=%d\n",d,array[d],d+1,array[d+1]);
+
+        if(array[d] > array[d+1]){
+            swap = array[d];
+            array[d] = array[d+1];
+            array[d+1] = swap;
+        }
+    }
+    printf("\n----------------------------------------------------------\n");
+  }
+
+  printf("Sorted List in Ascending Orders \n");
+
+  for(c=0; c<n; c++)
+    printf("%d \n", array[c]);
+  return 0;
+}
+
+
+/* /////////:::::::::::::::::::::: Start Memory address in an array prent elements ::::::::::::::::::*/
 #include<stdio.h>
 void firstfunction(int imran[]);
 void firstdetails(int imran[]);

@@ -34,6 +34,26 @@ int main(){
     printf("%d \n", array[c]);
   return 0;
 }
+/* ////////////::::::::::::::::: Start Input one Integers number with make an array to output Memory Address :::::://///*/
+#include<stdio.h>
+void mfunction(int imran[], int n);
+void main(){
+  printf("Enter one Integers Number \n");
+  int n;
+  scanf("%d",&n);
+ int imran[n];
+
+  for(int i=0; i<n; i++){
+    imran[i] = i;
+  }
+  mfunction(imran,n);
+}
+
+void mfunction(int imran[], int n){
+  for(int i=0; i<n; i++){
+    printf("Data value is %d and address %d \n", imran[i],&imran[i]);
+  }
+}
 
 
 /* /////////:::::::::::::::::::::: Start Memory address in an array prent elements ::::::::::::::::::*/

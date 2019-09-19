@@ -83,6 +83,33 @@ void firstdetails(int imran[]){
    }
 }
 
+/*///::::::::::::::::::::::: Binary Search :::::::::::::::::::::////////////*/
+#include<stdio.h>
+int binarysearch(int arr[], int i, int r, int x){
+
+if(r >= i){
+    int mid = i +(r-1)/2;
+    if(arr[mid] == x){
+        return mid;
+    }
+    if(arr[mid] > x){
+        return binarysearch(arr,i,mid-1,x);
+    }
+    return binarysearch(arr,mid+1,r,x);
+}
+ return -1;
+}
+int main(void){
+int arr[] = {67,2,3,4,10,40,70,80};
+int n = sizeof(arr) / sizeof(arr[0]);
+int x = 67;
+int result = binarysearch(arr,0,n-1,x);
+(result==-1) ? printf("Element is none present in array \n") :
+    printf("Element is Present al index %d \n", result);
+    return 0;
+}
+
+
 /* end Start Memory address in an array prent elements */
 
 #include<stdio.h>

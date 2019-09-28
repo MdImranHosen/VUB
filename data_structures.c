@@ -231,3 +231,25 @@ int main()
         printf("%d \n", array[c]);
     return 0;
 }
+
+/*    Recursion in C   */
+#include<stdio.h>
+int mfun(int n){
+  if(n==0){
+    return 0;
+  } else if(n==1){
+   return 1;
+  } else {
+   return 1 + mfun(n-1);
+  }
+}
+
+int main()
+{
+    int n;
+    printf("Enter Integer Number: ");
+    scanf("%d",&n);
+    printf("%d", mfun(n));
+    return 0;
+}
+

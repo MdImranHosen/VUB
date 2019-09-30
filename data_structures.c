@@ -252,4 +252,24 @@ int main()
     printf("%d", mfun(n));
     return 0;
 }
+////////::::::::::::::::::: Insert into a array element ::::::::::::;;;;
+#include <stdio.h>
+int main() {
+  int n;
+  printf("Enter Number of Element: ");
+   scanf("%d",&n);
+   int imran[n];
+   printf("Enter %d Integers \n", n);
+
+  for(int i = 0; i < n; ++i) {
+     scanf("%d", &imran[i]);
+  }
+
+  printf("array[] = { ");
+  for(int i = 0; i < n; ++i) {
+     printf("[%d]=%d, ",i, imran[i]);
+  }
+  printf(" };");
+  return 0;
+}
 

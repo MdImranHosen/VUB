@@ -272,4 +272,21 @@ int main() {
   printf(" };");
   return 0;
 }
+////////////:::::::::::::::: Input An array Element to Average number output :::::::::::::://////////////
+#include<stdio.h>
+int main()
+{
+    int i, n, sum=0, average;
+    printf("Enter array Element Number: ");
+    scanf("%d",&n);
+    int imran[n];
+    for(i=0;i<n; i++){
+        printf("Enter Number%d : ",i+1);
+        scanf("%d",&imran[i]);
+        sum += imran[i];
+    }
+    average = sum/n;
+    printf("Average Number %d ", average);
+    return 0;
+}
 

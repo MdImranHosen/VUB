@@ -72,3 +72,28 @@ public class MdImranHosen {
     
           
 }
+
+///// Input String Integer, Float .... to output
+
+import java.io.*;
+class JavaApplication1{
+ public static void main(String arg[])throws IOException{
+  Integer roll;
+  Float cg;
+  String r_roll,r_cg,name;
+  InputStreamReader in=new InputStreamReader(System.in);
+  BufferedReader br=new BufferedReader(in);
+  System.out.println("Enter Your Name: ");
+  name=br.readLine();
+  System.out.print("Enter Your Roll No: ");
+  r_roll=br.readLine();
+  roll=Integer.valueOf(r_roll);
+  System.out.print("Enter Your CG: ");
+  r_cg=br.readLine();
+  cg=Float.valueOf(r_cg);
+  System.out.println("Hi !!!\n"+name);
+  System.out.println("\n Your roll No is: "+roll);
+  System.out.println("\n \n Your CG is: "+cg);
+ }
+
+}

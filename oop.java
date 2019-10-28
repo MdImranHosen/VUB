@@ -97,3 +97,37 @@ class JavaApplication1{
  }
 
 }
+
+////////::::::::::::::::::::::: User Input Integer Number to Even Number Output :::::::::::: with Java ::::::://////
+
+package imranhosen;
+
+/**
+ *
+ * @author MD IMRAN HOSEN
+ */
+import java.io.*;
+public class Imran {
+ public static void main(String arr[])throws IOException {
+  Integer even_num;
+  String r_even_num;
+  InputStreamReader in = new InputStreamReader(System.in);
+  BufferedReader br = new BufferedReader(in);
+  
+  System.out.print("Enter Number: ");
+  r_even_num = br.readLine();
+  even_num = Integer.valueOf(r_even_num);
+  
+  System.out.print("Even Numbe is :");
+  
+  
+   for(Integer i=1; i<=even_num; i++){
+       
+      if(i%2 == 0){
+       System.out.print(" "+i);
+      }
+      
+   }
+ }
+}
+////////

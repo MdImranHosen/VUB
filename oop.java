@@ -130,4 +130,33 @@ public class Imran {
    }
  }
 }
-////////
+////////:::::::::::::: User to input integer number to output Odd Number ::::::::::::::://////////
+
+package imranhosen;
+
+/**
+ *
+ * @author MD IMRAN HOSEN
+ */
+import java.io.*;
+public class Imran {
+ public static void main(String arr[])throws IOException {
+  int num;
+  String r_num;
+  InputStreamReader in = new InputStreamReader(System.in);
+  BufferedReader br = new BufferedReader(in);
+  System.out.print("Enter Integer Number : ");
+  r_num = br.readLine();
+  num = Integer.valueOf(r_num);
+  System.out.print("Odd Number is: ");
+  for(int i=1; i<= num; i++){
+   if(i%2 != 0){
+   System.out.print(" "+i);
+   }
+  }
+  System.out.println();
+  
+ }
+}
+
+////////////

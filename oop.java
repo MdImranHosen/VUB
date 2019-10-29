@@ -159,7 +159,7 @@ public class Imran {
  }
 }
 
-//////////// :::::::::::::: Java in Break Use and input to user :::::::::::::::::::////////
+//////////// :::::::::::::: Java in Break and continue Use and input to user :::::::::::::::::::////////
 
 package imranhosen;
 
@@ -181,7 +181,7 @@ public class Imran {
    for(int i=1; i<= num; i++) {
     if(i==3){
      //System.out.println("This Number is "+i);
-     break;
+     break; // continue;
     }
     System.out.println(i);
    }

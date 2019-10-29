@@ -217,4 +217,69 @@ public static void main(String arr[])throws IOException {
   hosen(num);
 }
 }
-/////////////////::::::::::::::
+
+/////////////////:::::::::::::: Abstract class use in java :::::::::::::::::::://///////////
+
+package imranhosen;
+
+/**
+ *
+ * @author MD IMRAN HOSEN
+ */
+
+//Create file name is Person.java
+abstract class Person {
+  public String name = "Md Imran Hosen";
+  public Integer roll = 150011;
+  public abstract void study(); 
+}
+
+// Create File name is Student.java
+public class Student extends Person{
+ int graduationYear = 2019;
+ 
+ public void study(){
+   System.out.print("Studying all day Long.");
+ }
+ 
+}
+
+//create file name is MyClass.java
+public class MyClass {
+    
+    public static void main(String arr[]){
+      Student st = new Student();
+      
+      System.out.print(st.graduationYear+" \n");
+      System.out.println("Name is: "+st.name);
+      System.out.println("Roll is : "+st.roll);
+      st.study();
+    }
+}
+////////::::::::::::::::::::: Private and getter and setter use :::::::::::::::::////////////
+
+//Create file name is Person.java
+public class Person {
+  private String name;
+  
+  //Getter
+  public String getName(){
+   return name;
+  }
+  //Setter
+  public void setName(String newName){
+   this.name = newName;
+  }
+}
+
+//create file name is MyClass.java
+public class MyClass {
+    
+    public static void main(String arr[]){
+      Person ps = new Person();
+       ps.setName("Md Imran Hosen \n");
+       System.out.print(ps.getName());
+       
+      }
+}
+

@@ -187,4 +187,34 @@ public class Imran {
    }
  }
 }
-///////////:::::::::::::::::::
+///////////::::::::::::::::::: Static and non-static Method Access to another Method :::::::::::://////////
+package imranhosen;
+
+/**
+ *
+ * @author MD IMRAN HOSEN
+ */
+import java.io.*;
+public class Imran {
+ 
+ public static void hosen(int number){
+   System.out.print("This Number is : "+number+" \n");
+ }
+ public  void myMethod(){
+ 
+     System.out.print("I am Md Imran Hosen \n");
+ }
+public static void main(String arr[])throws IOException {
+   Imran obj = new Imran();
+  obj.myMethod();
+  int num;
+  String r_num;
+  InputStreamReader in = new InputStreamReader(System.in);
+  BufferedReader br = new BufferedReader(in);
+  System.out.print("Enter One Integer Number : ");
+  r_num = br.readLine();
+  num = Integer.valueOf(r_num);
+  hosen(num);
+}
+}
+/////////////////::::::::::::::

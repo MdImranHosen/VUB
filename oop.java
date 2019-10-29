@@ -159,4 +159,32 @@ public class Imran {
  }
 }
 
-////////////
+//////////// :::::::::::::: Java in Break Use and input to user :::::::::::::::::::////////
+
+package imranhosen;
+
+/**
+ *
+ * @author MD IMRAN HOSEN
+ */
+import java.io.*;
+public class Imran {
+ public static void main(String arr[])throws IOException {
+    int num;
+    String r_num;
+    InputStreamReader in = new InputStreamReader(System.in);
+    BufferedReader br = new BufferedReader(in);
+    System.out.print("Enter Integer Number : ");
+    r_num = br.readLine();
+    num = Integer.valueOf(r_num);
+    
+   for(int i=1; i<= num; i++) {
+    if(i==3){
+     //System.out.println("This Number is "+i);
+     break;
+    }
+    System.out.println(i);
+   }
+ }
+}
+///////////:::::::::::::::::::

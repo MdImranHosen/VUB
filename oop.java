@@ -341,4 +341,38 @@ public class Imran {
     inobj.hosen();
    }
 }
-//////////////::::::::::::::::::::::
+//////////////:::::::::::::::::::::: Interface and Implements use ::::::::::::::::::////////////////
+package imranhosen;
+
+/**
+ *
+ * @author MD IMRAN HOSEN
+ */
+// Create filename hosen.java
+interface hosen {
+    public void newData();
+    public void newDatat();
+}
+
+//Create File name MyClass.java
+class MyClass implements hosen {
+    
+    public void newData(){
+     System.out.print("Some Test Text Here.. \n");
+    }
+    public void newDatat(){
+    System.out.print("Second Text Here \n");
+    }
+}
+
+//Create File name Imran.java
+public class Imran {
+   public static void main(String arr[]){
+
+    MyClass obj = new MyClass();
+    obj.newData();
+    obj.newDatat();
+    
+   }
+}
+

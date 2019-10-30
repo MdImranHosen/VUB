@@ -282,4 +282,36 @@ public class MyClass {
        
       }
 }
+//::::::::::::::::::::::::: import Scanner class and input keybord to output Even Number with try catch block use :::::://///////////
+package imranhosen;
 
+/**
+ *
+ * @author MD IMRAN HOSEN
+ */
+import java.util.Scanner;
+public class Imran {
+   public static void main(String arr[]){
+    try{
+    Scanner obj = new Scanner(System.in);
+    int num;
+    String newName;
+    System.out.print("Enter Integer Number: ");
+    newName = obj.nextLine();
+    num = Integer.valueOf(newName);
+    System.out.println("Number is :"+num);
+    
+    System.out.print("Even Number is: ");
+    for(int i=1; i<num; i++){
+      if(i%2==0){
+       System.out.print(" "+i);
+      }
+    }
+    System.out.println();
+    }catch(Exception e){
+     System.out.print("Something Went wrong. \n");
+    }
+    
+   }
+}
+//////////:::::::::::::::::

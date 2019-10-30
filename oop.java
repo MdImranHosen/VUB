@@ -51,7 +51,29 @@ public class Imran {
     
    }
 }
+/////::::::::::::::::: Date and Time :::::::::::::::::://///////////
 
+import java.time.*;
+import java.time.format.*;
+public class Imran {
+    
+   public static void main(String arr[]){
+       
+   try {
+     LocalDate dt =  LocalDate.now(); // LocalDateTime, LocalTime, LocalDate
+     System.out.print(dt+" \n");
+       
+    DateTimeFormatter fmdate = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm:ss");
+
+    String fmd = dt.format(fmdate);
+    System.out.println("After formatting: " + fmd);
+   
+   } catch(Exception e){
+       System.out.print("Only Integer Number Allow. \n");
+    }
+    
+   }
+}
 
 
 /////////////////////////////////:::::::::::::::::::::: 30-10-2019 :::::::::::://///////////////////

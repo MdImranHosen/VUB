@@ -1,3 +1,60 @@
+//////////////////::::::::::::: User Input integer Number to Output Even and Odd Number ::::::::::::::://////////
+package imranhosen;
+
+/**
+ *
+ * @author MD IMRAN HOSEN
+ */
+
+//Create File name Imran.java
+import java.util.Scanner;
+public class Imran {
+    
+   public static void main(String arr[]){
+       
+   try {
+       int number;
+    Scanner obj = new Scanner(System.in);
+    System.out.print("Enter One Integer Number: ");
+    number = obj.nextInt(); 
+    
+    // nextDouble(); for Double value get to user
+    // nextFloat(); for Float Value get to user
+    // nextLine(); for String Value get to user
+    // nextLong(); for Long value get to user
+    // nextShort(); for Short value get to user
+    //nextBoolean(); for Boolean value ge to user
+    
+    System.out.print("Even Number is : ");
+    for(int i=1; i<= number; i++){
+      if(i%2==0){
+       System.out.print(i+", ");
+      }
+              
+    }
+    System.out.println(" \n -----------------------------");
+    
+    System.out.print("Odd Number is : ");
+    
+    for(int m=1; m<=number; m++){
+        
+        if(m%2!=0){
+         System.out.print(m+", ");
+        }
+    }
+    System.out.println();
+     
+   
+   } catch(Exception e){
+       System.out.print("Only Integer Number Allow. \n");
+    }
+    
+   }
+}
+
+
+
+/////////////////////////////////:::::::::::::::::::::: 30-10-2019 :::::::::::://///////////////////
 package mdimranhosen;
 
 /**

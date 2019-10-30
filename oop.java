@@ -314,4 +314,31 @@ public class Imran {
     
    }
 }
-//////////:::::::::::::::::
+//////////::::::::::::::::: Inner Class ::::::::::::::::::::///////
+
+package imranhosen;
+
+/**
+ *
+ * @author MD IMRAN HOSEN
+ */
+//Create filename MyClass.java
+public class MyClass {
+    public class InnerClass{
+        public void hosen(){
+        System.out.print("Hello How are You? \n");
+        }
+     
+   }
+}
+//Create File name Imran.java
+public class Imran {
+   public static void main(String arr[]){
+
+    MyClass obj = new MyClass();
+    MyClass.InnerClass inobj = obj.new InnerClass();
+    
+    inobj.hosen();
+   }
+}
+//////////////::::::::::::::::::::::

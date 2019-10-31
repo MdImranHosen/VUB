@@ -95,6 +95,41 @@ public class Imran {
 
 }
 
+/////////////////:::::::::::::::::::::::User input to Factorial Number Output ::::::::::::::////////////
+//Create Package name imranhosen
+package imranhosen;
+
+/**
+ *
+ * @author MD IMRAN HOSEN
+ */
+
+//Create File name Imran.java
+import java.util.Scanner;
+public class Imran {
+   public static void main(String arr[]){
+   
+       try {
+      
+        Scanner obj = new Scanner(System.in);
+        int n, number, fact=1;
+        System.out.print("Enter One Integer Number: ");
+        number = obj.nextInt();
+        for(n=1; n<=number; n++){
+            
+          fact = fact*n;
+          
+        }
+        System.out.print("Factorial of "+number+" is "+fact+" \n");
+       
+       } catch(Exception e){
+        System.out.print("Only Allow Integer Number.\n");
+       }
+   
+   } 
+
+}
+
 /////::::::::::::::::: Date and Time :::::::::::::::::://///////////
 
 import java.time.*;

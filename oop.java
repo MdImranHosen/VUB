@@ -129,6 +129,44 @@ public class Imran {
    } 
 
 }
+//////////////////::::::::::::::::::::::::: User input to Fibonacci Number output ::::::::::::::::::://///////////////
+package imranhosen;
+
+/**
+ *
+ * @author MD IMRAN HOSEN
+ */
+
+//Create File name Imran.java
+import java.util.Scanner;
+public class Imran {
+   public static void main(String arr[]){
+   
+       try {
+      
+        Scanner obj = new Scanner(System.in);
+        
+        int n1=0,n2=1,n3,i,count; 
+        System.out.print("Enter One Integer Number: ");
+        count = obj.nextInt();
+        
+            System.out.print(n1+" "+n2);//printing 0 and 1    
+
+            for(i=2;i<count;++i)//loop starts from 2 because 0 and 1 are already printed    
+            {
+             n3=n1+n2;    
+             System.out.print(" "+n3);    
+             n1=n2;    
+             n2=n3;    
+            }  
+         System.out.println();
+       } catch(Exception e){
+        System.out.print("Only Allow Integer Number.\n");
+       }
+   
+   } 
+
+}
 
 /////::::::::::::::::: Date and Time :::::::::::::::::://///////////
 

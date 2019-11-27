@@ -1,4 +1,31 @@
-
+/////////////::::::::::::::::: User input to Even number output ::::::::::://///////
+/**
+ *
+ * @author MD IMRAN HOSEN
+ */
+import java.util.Scanner;
+public class NewClass {
+    
+    
+    public static void main(String[] arr){
+        int n;
+        int i;
+        System.out.println("Enter one Integer Number.");
+        Scanner obj = new Scanner(System.in);
+        n = obj.nextInt();
+        
+        System.out.print("Even Number is : ");
+        
+        for(i=0; i<n; i++){
+          if(i%2==0){
+          System.out.print(i+" ");
+          }
+        }
+        
+        System.out.println();
+      
+    }
+}
 ///\\\\:::::::::::::::: constructor ::::::::::::::::::::::;\\\\\\\\\\\/////////////////
 /**
  *

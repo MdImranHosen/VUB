@@ -1,3 +1,40 @@
+
+///\\\\:::::::::::::::: constructor ::::::::::::::::::::::;\\\\\\\\\\\/////////////////
+/**
+ *
+ * @author MD IMRAN HOSEN
+ */
+// Create Class and file name MClass
+public class MClass {
+    int numone = 10;  // Properties
+    
+    
+    public MClass(){ // Without parameter constructor
+    System.out.println("Hello! How are You?");
+    }
+    
+    public MClass(String name){ // Only One Parameter Constructor
+        
+    System.out.println("This Name is : "+name);
+    }
+    public MClass(int number, int num2){ // Two Parameter Constructor.
+     System.out.println("First Number is "+number+" + Second Number is "+num2+" = "+number+num2);
+    }
+    
+    public static void main(String[] arr){
+      System.out.println("I don't know what to do.");
+      
+      MClass obj = new MClass("Md Imran Hosen");
+      System.out.println(obj.numone);
+        
+      MClass objs = new MClass(150011,160011);
+      
+      MClass objt = new MClass();
+    }
+}
+
+
+
 //////////////////::::::::::::: User Input integer Number to Output Even and Odd Number ::::::::::::::://////////
 package imranhosen;
 

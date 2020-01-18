@@ -118,6 +118,48 @@ public class SubClass extends HelloWorld {
         }
         }
 }
+////////:::::::::::::::::::::::::: 4: Method Overriding ::::::::::::::::\\\\\\\\\\\\\\\\\\\
+
+package helloworld;
+/**
+ *
+ * @author MD IMRAN HOSEN
+ */
+import java.util.Scanner;
+public class HelloWorld {
+        
+    Scanner data = new Scanner(System.in);
+    int x = data.nextInt();
+    int y = data.nextInt();
+    
+   public int myFunction(int x, int y){
+    int z = x+y;
+    return z;                                                                       
+    }
+    
+     public static void main(String[] args) {
+       System.out.print("Enter Two Integer Number: ");
+       SubClass sobj = new SubClass();
+       int a = sobj.x;
+       int b = sobj.y;
+       System.out.print("Result is "+sobj.myFunction(a,b)+ " \n");
+    }    
+}
+
+////::: SubClass.java  ::::\\\\\\
+package helloworld;
+/**
+ *
+ * @author MD IMRAN HOSEN
+ */
+public class SubClass extends HelloWorld {
+    
+    public int myFunction(int f, int p){
+     int z = f-p;
+     return z;
+    }
+   
+}
 
 
 ///////////////////////::::::::::::::::::::: End :::::::::::::::::::::::::::::::::\\\\\\\\\\\\\\\\\\\\\\

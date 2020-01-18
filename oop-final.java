@@ -62,4 +62,62 @@ public class ImranCsit{
       }
     }
 }
+
+//////////////:::::::::::::::::: 3 : Inheritance with addtition subtraction multiplication division ::::::::::\\\\\\\\\\\\\\
+package helloworld;
+
+/**
+ *
+ * @author MD IMRAN HOSEN
+ */
+import java.util.Scanner;
+public class HelloWorld {
+        
+    Scanner data = new Scanner(System.in);
+    int x = data.nextInt();
+    int y = data.nextInt();
+    public int myFunctionAdd(){
+     int add = x+y;
+     return add;
+     
+    }
+    public String myFunctionSub(){
+        int t = x-y;
+        String z = "Subtraction Number is "+t;
+        return z;
+    }
+    public String myFunctionMul(){
+        int t = x*y;
+        String z = "Multiplication Number is "+t;
+        return z;
+    }
+    public String myFunctionDiv(){
+     float t = x/y;
+     String z = "Division Number is "+t+" \n";
+     return z;
+    }
+    
+}
+//// :: SubClass new file SubClass.java :::: \\\\\
+
+package helloworld;
+/**
+ *
+ * @author MD IMRAN HOSEN
+ */
+public class SubClass extends HelloWorld {
+    
+    public static void main(String[] args) {
+        try {
+        System.out.print("Two Integer Numbner input: \n");
+        SubClass obj = new SubClass();
+        System.out.print("Addition Number is: "+obj.myFunctionAdd()+" \n"+ obj.myFunctionSub()+" \n "+obj.myFunctionMul()+" \n "+obj.myFunctionDiv());
+   
+        } catch(Exception e){
+         System.out.print("Something went worng. \n");
+        }
+        }
+}
+
+
 ///////////////////////::::::::::::::::::::: End :::::::::::::::::::::::::::::::::\\\\\\\\\\\\\\\\\\\\\\

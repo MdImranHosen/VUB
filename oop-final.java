@@ -223,4 +223,39 @@ public class SubClass extends HelloWorld {
        }
     }
 }
+///////////////////////:::::::::::::::::::::: 6 :: super, final, instanceof keyword use ::::::::::::\\\\\\\\\\\\\\\
+
+package helloworld;
+/**
+ *
+ * @author MD IMRAN HOSEN
+ */
+public class HelloWorld {
+   final int x = 10;
+   
+   public void myFunction(){
+    System.out.print("How are you ? \n");
+   }
+ 
+  
+   public static void main(String[] args) {
+       SubClass sobj = new SubClass();
+      // sobj.x = 25;
+       System.out.print(sobj.x+" \n");
+       sobj.myFunction();
+       
+       System.out.println(sobj instanceof SubClass);
+    }
+    
+}
+///::::: SubClass.java :::::\\\
+public class SubClass extends HelloWorld {
+    
+    public void myFunction(){
+        super.myFunction();
+     System.out.println("Fine and You");
+    }
+ 
+}
+
 ///////////////////////::::::::::::::::::::: End :::::::::::::::::::::::::::::::::\\\\\\\\\\\\\\\\\\\\\\

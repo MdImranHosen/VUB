@@ -293,11 +293,7 @@ public class Imran {
 
 }
 /////// :::: OtherClass.java :::::\\\\
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package imranhosen;
 
 /**
@@ -305,22 +301,26 @@ package imranhosen;
  * @author MD IMRAN HOSEN
  */
 import java.io.*;
-public class OtherClass {
-   public static void main(String args[]) {
-      /* Create two objects using constructor */
-      Imran empOne = new Imran("Md Imran Hosen");
-      Imran empTwo = new Imran("Jamal Khan");
-
-      // Invoking methods for each object created
-      empOne.empAge(23);
-      empOne.empSalary(20000);
-      empOne.display();
-
-      empTwo.empAge(19);
-      empTwo.empSalary(8000);
-      empTwo.display();
-   }
+import java.util.Scanner;
+public class SubClass {
+   public static void main(String arr[]){
+      Scanner sdata = new Scanner(System.in);
+      System.out.println("Enter a Full Name");
+      String name = sdata.nextLine();
+      System.out.println("Enter Your age (Integer) ");
+      int age = sdata.nextInt();
+      System.out.println("Enter Your Salary (Integer) ");
+      double salary = sdata.nextDouble();
+      
+      Imran obj = new Imran("Md Imran Hosen");
+      
+      obj.empAge(age);
+      obj.empSalary(salary);
+      obj.display();
+      
+   } 
 }
+
 
 
 ///////////////////////::::::::::::::::::::: End :::::::::::::::::::::::::::::::::\\\\\\\\\\\\\\\\\\\\\\

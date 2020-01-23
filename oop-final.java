@@ -257,5 +257,70 @@ public class SubClass extends HelloWorld {
     }
  
 }
+/////////////::::::::::::  7 : Java File import in a pacakege with multiple method :::::::::\\\\\\\\\\\\\\\\\
+
+package imranhosen;
+
+/**
+ *
+ * @author MD IMRAN HOSEN
+ */
+
+//Create File name Imran.java
+import java.io.*;
+public class Imran {
+   
+    String name;
+    int age;
+    double salary;
+    
+    public Imran(String name){
+    
+    this.name = name;
+    }
+    public void empAge(int empage){
+      age = empage;
+    }
+    public void empSalary(double empsal){
+     salary = empsal;
+    }
+    public void display(){
+    System.out.println("Name is "+name);
+    System.out.println("Age is "+age);
+    System.out.println("Name is "+salary);
+    }
+   
+
+}
+/////// :::: OtherClass.java :::::\\\\
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package imranhosen;
+
+/**
+ *
+ * @author MD IMRAN HOSEN
+ */
+import java.io.*;
+public class OtherClass {
+   public static void main(String args[]) {
+      /* Create two objects using constructor */
+      Imran empOne = new Imran("Md Imran Hosen");
+      Imran empTwo = new Imran("Jamal Khan");
+
+      // Invoking methods for each object created
+      empOne.empAge(23);
+      empOne.empSalary(20000);
+      empOne.display();
+
+      empTwo.empAge(19);
+      empTwo.empSalary(8000);
+      empTwo.display();
+   }
+}
+
 
 ///////////////////////::::::::::::::::::::: End :::::::::::::::::::::::::::::::::\\\\\\\\\\\\\\\\\\\\\\
